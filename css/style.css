@@ -1,0 +1,166 @@
+body {
+    margin-top: 0;
+}
+
+.bg-startsidan {
+    background-color: rgb(75, 197, 245);
+}
+
+.bildgalleri-flex {
+    display: flex;
+    box-sizing: border-box;
+    flex-flow: row wrap;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+}
+
+.wind-image {
+    background-image: url("../images/wind.jpg");
+    background-size: 99.5%;
+    background-repeat: no-repeat;
+    background-position: 50% 94%;
+}
+
+.projekt-startsidan {
+    flex-basis: 45%;
+}
+
+.projekt-startsidan h2 {
+    color: rgb(240, 252, 15);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.projekt-startsidan img {
+    width: 100%;
+    transition: 1.8s;
+}
+
+.projekt-startsidan img:hover {
+    transform: rotateY(360deg);
+}
+
+.projekt-startsidan a {
+    text-decoration: none;
+}
+
+/* början för alla allmänna style för alla projekt */
+
+.bg-projekt {
+    background-color: lightseagreen;
+}
+
+.projekt-h1 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(6, 240, 6);
+}
+
+.projekt-storBild-flex {
+    display: flex;
+    justify-content: center;
+    margin: 0 400px 0 400px;
+
+}
+
+.projekt-storBild-flex img {
+    width: 100%
+}
+
+.projekt-mindreBilder-flex {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projekt-mindreBilder {
+    flex-basis: 32%;
+}
+
+.projekt-mindreBilder img {
+    width: 100%;
+}
+
+/* slutet av alla allmänna style för alla projekt */
+
+/* början av navbar style för alla projekt */
+.projekt-1-navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: darkslateblue;
+    margin: 0 280px 0 280px;
+    justify-content: center;
+    gap: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.projekt-1-navbar a {
+    color: red;
+    font-size: bold;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.projekt-1-navbar a:hover {
+    color: pink;
+}
+
+.projekt-1-navbar a[aria-current="page"] {
+    /* current page */
+    color: pink;
+    font-size: bold;
+    text-decoration: none;
+}
+
+/* slutet av navbar style för alla projekt */
+
+/* början av style för informationssida */
+
+.bg-informationssida{
+    background-color: black;
+}
+
+.glow{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px 
+        #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to{
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px 
+        #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+.p-values{
+    color: white;
+    margin-left: 15px;
+    margin-bottom: 20rem;
+}
+
+/* slutet av style för informationssida */
+
+
+footer{
+    /* stil som gäller för alla footers */
+    margin: auto 20px auto 20px;
+    padding-left: 15px;
+    border: 4px solid green;
+    background-color: rgb(225, 211, 211);
+    font-weight: bold;
+}
+
+div p{
+    text-align: center;
+}
