@@ -100,8 +100,8 @@ div p {
 
 /* slutet av projekt */
 
-/* början av navbar projekt */
-.projekt-1-navbar {
+/* början av navbar för alla sidor */
+.navbar {
     display: flex;
     flex-flow: row nowrap;
     background-color: darkslateblue;
@@ -113,22 +113,22 @@ div p {
     z-index: 1;
 }
 
-.projekt-1-navbar a {
+.navbar a {
     color: red;
     text-decoration: none;
     transition: .2s;
 }
 
-.projekt-1-navbar a:hover {
+.navbar a:hover {
     color: pink;
 }
 
-.projekt-1-navbar a[aria-current="page"] {
+.navbar a[aria-current="page"] {
     /* current page */
     color: pink;
 }
 
-/* slutet av navbar projekt */
+/* slutet av navbar för alla sidor */
 
 /* början av informationssida */
 
